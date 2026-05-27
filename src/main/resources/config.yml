@@ -1,0 +1,87 @@
+# Moonshard Configuration
+
+# The display name of the currency
+currency_name: "&#d455ffShards"
+
+# Link settings
+link:
+  text: "&b&l[KLICK HIER]"
+  url: "https://discord.gg/deinlink"
+  hover: "&7Klicke hier, um unseren Discord zu besuchen!"
+
+# Passive Income Settings
+income:
+  enabled: true
+  amount: 1
+  interval_minutes: 1
+  permission: "moonshard.income"
+
+# Daily Reward Settings
+daily_reward:
+  enabled: true
+  amount: 100
+  cooldown_hours: 24
+
+# Shop Settings
+shops:
+  left:
+    title: "&0&lSchwarzer Shop (Links)"
+    size: 27
+    items:
+      example_left:
+        material: COAL
+        slot: 13
+        name: "&8Kohlestück"
+        lore:
+          - "&7Preis: &e10 %shards%"
+        price: 10
+        commands:
+          - "give %player% coal 1"
+  middle:
+    title: "&6&lGoldener Shop"
+    size: 27
+    items:
+      example_mid:
+        material: GOLD_INGOT
+        slot: 13
+        name: "&6Goldbarren"
+        lore:
+          - "&7Preis: &e100 %shards%"
+        price: 100
+        commands:
+          - "give %player% gold_ingot 1"
+  right:
+    title: "&0&lSchwarzer Shop (Rechts)"
+    size: 27
+    items:
+      example_right:
+        material: FLINT
+        slot: 13
+        name: "&8Feuerstein"
+        lore:
+          - "&7Preis: &e50 %shards%"
+        price: 50
+        commands:
+          - "give %player% flint 1"
+
+# Gambling Settings
+gamble:
+  tax: 0.05
+  min_bet: 10
+  max_bet: 10000
+
+# Messages
+messages:
+  prefix: "&8[&bMoonshard&8] "
+  no_permission: "&cYou don't have permission to do that."
+  not_enough_shards: "&cYou don't have enough %shards%!"
+  received_shards: "&7You received &e%amount% %shards% &7from &b%sender%&7."
+  sent_shards: "&7You sent &e%amount% %shards% &7to &b%receiver%&7."
+  admin_set_shards: "&7You set &b%player%'s %shards% &7to &e%amount%&7."
+  income_received: "&7You received &e%amount% %shards% &7for being active!"
+  daily_claimed: "&7You claimed your daily reward of &e%amount% %shards%&7!"
+  daily_cooldown: "&cYou can claim your next reward in &e%time%&7."
+  gamble_win: "&aYou won! You received &e%amount% %shards%&7."
+  gamble_loss: "&cYou lost &e%amount% %shards%&7. Better luck next time!"
+  gamble_usage: "&cUsage: /shard gamble <amount> <black|white>"
+  invalid_bet: "&cInvalid bet amount. Min: %min%, Max: %max%"

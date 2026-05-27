@@ -1,0 +1,22 @@
+placeholders:
+
+  shards:
+    placeholder: "%moonshard_shards%"
+    description: "Zeigt die aktuelle Anzahl der Shards des Spielers an."
+  shards_formatted:
+    placeholder: "%moonshard_shards_formatted%"
+    description: "Zeigt die Shards mit Tausender-Trennzeichen an (z.B. 1.250)."
+
+
+  top_name:
+    placeholder: "%moonshard_top_name_<rank>%"
+    description: "Zeigt den Namen des Spielers auf einem bestimmten Rang (z.B. %moonshard_top_name_1%)."
+  top_shards:
+    placeholder: "%moonshard_top_shards_<rank>%"
+    description: "Zeigt die Shards des Spielers auf einem bestimmten Rang (z.B. %moonshard_top_shards_1%)."
+
+usage_examples:
+  scoreboard:
+    - "&7Guthaben: &e%moonshard_shards_formatted%"
+  tablist:
+    - "&bTop 1: &f%moonshard_top_name_1% &8(&e%moonshard_top_shards_1%&8)"

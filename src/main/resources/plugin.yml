@@ -1,0 +1,44 @@
+name: Moonshard
+version: 1.0-SNAPSHOT
+main: de.moonprincess.moonshard.Moonshard
+api-version: 1.21
+depend: [PlaceholderAPI]
+softdepend: [PlaceholderAPI]
+commands:
+  shard:
+    description: "Main command for Moonshards"
+    aliases: [shards, s]
+    usage: "/shard <shop|daily|gamble|pay|leaderboard|info>"
+  shardadmin:
+    description: "Admin command for Moonshards"
+    aliases: [sa, sadmin]
+    permission: moonshard.admin
+    usage: "/shardadmin <set|add|remove> <player> <amount>"
+permissions:
+  moonshard.admin:
+    description: "Allows access to all administrative Moonshard commands"
+    default: op
+  moonshard.use:
+    description: "Basic access to /shard"
+    default: true
+  moonshard.shop:
+    description: "Allows access to /shard shop"
+    default: true
+  moonshard.daily:
+    description: "Allows access to /shard daily"
+    default: true
+  moonshard.gamble:
+    description: "Allows access to /shard gamble"
+    default: true
+  moonshard.pay:
+    description: "Allows access to /shard pay"
+    default: true
+  moonshard.leaderboard:
+    description: "Allows access to /shard leaderboard"
+    default: true
+  moonshard.info:
+    description: "Allows access to /shard info"
+    default: true
+  moonshard.income:
+    description: "Allows the player to receive passive Shards"
+    default: true
